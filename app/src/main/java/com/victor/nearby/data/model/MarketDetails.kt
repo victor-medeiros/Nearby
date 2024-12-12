@@ -3,7 +3,8 @@ package com.victor.nearby.data.model
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class Market(
+data class MarketDetails(
+    val rules: List<Rule> = emptyList(),
     val id: String,
     val categoryId: String,
     val name: String,

@@ -1,7 +1,6 @@
 package com.victor.nearby.ui.component.category
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
@@ -36,7 +35,6 @@ fun NearbyCategoryChipList(
 
     LazyRow(
         modifier = modifier,
-        contentPadding = PaddingValues(horizontal = 24.dp),
         horizontalArrangement = Arrangement.spacedBy(8.dp)
     ) {
         items(categories, key = { it.id }) { category ->
